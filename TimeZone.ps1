@@ -37,7 +37,7 @@ if($Name -and $Offset)
 }
 elseif($Name)
 {
-$webAPIData | where-object { $_.utc -match $Name }
+$webAPIData | where-object { $_.value -match $Name }
 }
 elseif($Offset)
 {
