@@ -33,7 +33,7 @@ function Get-CommonTimeZone {
 $webAPIData = ConvertFrom-JSON (Invoke-WebRequest -uri "https://raw.githubusercontent.com/dmfilipenko/timezones.json/master/timezones.json")
 if($Name -and $Offset)
 {
-    Write-Host " please enter either -name 0r -offset"
+    Write-Host " please enter either -name or -offset"
 }
 elseif($Name)
 {
